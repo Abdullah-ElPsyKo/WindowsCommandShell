@@ -1,7 +1,7 @@
 # WinCommandRedirection
 
 ## Overview
-A simple program to execute Windows commands with input (`<`) and output (`>`) redirection using the Windows API.
+A low-level C implementation demonstrating custom I/O redirection (> and <) via the native Windows API. Implements explicit kernel handle inheritance (SECURITY_ATTRIBUTES) and process manipulation by overriding STARTUPINFO standard streams (hStdOutput/hStdInput) before spawning child processes via CreateProcessW.
 
 ## Usage
 1. Compile and run the program.
